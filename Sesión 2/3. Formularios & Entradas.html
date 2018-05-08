@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios y Entradas</title>
+</head>
+<body>
+	<h1>Formularios y Entradas</h1>
+	<form action= "POST" action="indes.php">
+		<fieldset>
+			<legend>Cuenta</legend>
+			<label>Nombre</label>
+			<input type="text" name="name" required>
+			<br><br>
+
+			<label>Correo</label><br>
+			<input type="email" name="email">
+			<br><br>
+
+			<label>Contraseña</label><br>
+			<input type="password" name="password">
+			<br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Información de Usuario</legend>
+			<label>Ubicaciòn</label><br>
+			<select name="location">
+				<option value="PE">Perú</option>
+				<option value="ES" selected>España</option>
+				<option value="UY">Uruguay</option>
+			</select>
+			<br><br>
+
+			<label>Género</label><br>
+			<input type="radio" name="gender" value="Male"> Masculino
+			<input type="radio" name="gender" value="Female" checked> Femenino
+			<br><br>
+
+			<label>Intereses</label><br>
+			<input type="checkbox" name="Interests" value="Movies" checked> Películas
+			<input type="checkbox" name="Interests" value="Music"> Música
+			<input type="checkbox" name="Interests" value="Sports" checked> Deportes
+			<input type="checkbox" name="Interests" value="Art"> Arte
+			<br><br>
+		</fieldset>
+		<br>
+		<input type="submit" name="Enviar">
+	</form>
+</body>
+</html>
